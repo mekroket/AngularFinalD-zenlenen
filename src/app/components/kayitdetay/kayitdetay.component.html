@@ -1,0 +1,122 @@
+<app-nav></app-nav>
+<link rel="stylesheet" href="kayitdetay.component.css">
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+
+<br><br><br>
+<div class="container">
+    <div class="card">
+        <div class="container-fliud">
+            <div class="wrapper row">
+                <div class="preview col-md-6">
+                    
+                    <div class="preview-pic tab-content">
+                      <div class="tab-pane active" id="pic-1"><img src="assets/ic.gif" /></div>
+                      <div class="tab-pane" id="pic-2"><img src="assets/audi.jpg" /></div>
+                      <div class="tab-pane" id="pic-3"><img src="assets/audi.jpg" /></div>
+                      <div class="tab-pane" id="pic-4"><img src="assets/audi.jpg" /></div>
+                      <div class="tab-pane" id="pic-5"><img src="assets/audi.jpg" /></div>
+                    </div>
+                    <ul class="preview-thumbnail nav nav-tabs">
+                      <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="assets/audi.jpg" /></a></li>
+                      <li><a data-target="#pic-2" data-toggle="tab"><img src="assets/audi3.jpg" /></a></li>
+                      <li><a data-target="#pic-3" data-toggle="tab"><img src="assets/audi4.jpg" /></a></li>
+                      <li><a data-target="#pic-4" data-toggle="tab"><img src="assets/audi5.jpg" /></a></li>
+                      <li><a data-target="#pic-5" data-toggle="tab"><img src="assets/audi.jpg" /></a></li>
+                    </ul>
+                    
+                </div>
+                <div class="details col-md-6">
+                    <h3 class="product-title">{{secKayit.baslik}}</h3>
+                    <div class="rating">
+                        <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <span class="review-no">41 Puan</span>
+                    </div>
+                    <p class="product-description">{{secKayit.icerik}}</p>
+                    <h4 class="price">Fiyat <span>₺180</span></h4>
+                    <br><br>
+                    
+                    <h5 class="sizes">sizes:
+                        <span class="size" data-toggle="tooltip" title="small">s</span>
+                        <span class="size" data-toggle="tooltip" title="medium">m</span>
+                        <span class="size" data-toggle="tooltip" title="large">l</span>
+                        <span class="size" data-toggle="tooltip" title="xtra large">xl</span>
+
+                        <div class="mb-3 mb-md-0 col-md-3">
+                            <div class="form-control-wrap">
+                                <br>
+                              <span class="icon icon-date_range"></span>
+                            </div>
+                          </div>
+                          
+
+
+
+
+                    </h5>
+                    
+                    <div class="action">
+                        
+                        
+                    </div>
+                </div>
+                <div class="form-group row" style="margin-left: 35%;">
+                    <label class="col-form-label text-right col-lg-3 col-sm-12">Gününden</label>
+                    <div class="col-lg-4 col-md-9 col-sm-12">
+                     <div class="input-group date" id="kt_datetimepicker_12" data-target-input="nearest">
+                      <input type="text" class="form-control is-valid datetimepicker-input" placeholder="Tarih Ve Saat Giriniz" data-target="#kt_datetimepicker_12"/>
+                      <div class="input-group-append" data-target="#kt_datetimepicker_12" data-toggle="datetimepicker">
+                       <span class="input-group-text">
+                        <i class="fas fa-calendar-week"></i>
+                       </span>
+                      </div>
+                      <div class="valid-feedback">
+                       Zaman Uygun
+                      </div>
+                     </div>
+                     <span class="form-text text-muted">Lütfen Aracı Kullanıcağınız Kadar Kiralayın</span>
+                    </div>
+                   </div>
+                   
+                   <div class="form-group row" style="margin-left: 35%;">
+                    <label class="col-form-label text-right col-lg-3 col-sm-12">Gününe</label>
+                    <div class="col-lg-4 col-md-9 col-sm-12">
+                     <div class="input-group date" id="kt_datetimepicker_13" data-target-input="nearest">
+                      <input type="text" class="form-control is-invalid datetimepicker-input" placeholder="Tarih Ve Saat Giriniz" data-target="#kt_datetimepicker_13"/>
+                      <div class="input-group-append" data-target="#kt_datetimepicker_12" data-toggle="datetimepicker">
+                       <span class="input-group-text">
+                        <i class="fas fa-calendar-week"></i>
+                       </span>
+                      </div>
+                      <div class="valid-feedback">
+                       Zaman Arttır
+                      </div>
+                     </div>
+                     <span class="form-text text-muted">Lütfen Aracı Kullanıcağınız Kadar Kiralayın</span>
+                     <button class="add-to-cart btn btn-warning" type="button" routerLink="/aracikirala" style="margin-left: 90%;">Kirala</button>
+                    </div>
+                    
+                   </div>
+                   
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    
+</script>
+<app-footer></app-footer>

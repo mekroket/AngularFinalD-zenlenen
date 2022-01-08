@@ -1,0 +1,251 @@
+<app-nav></app-nav>
+<link rel="stylesheet" href="cars.component.css">
+<!-- Header-->
+<br><br><br><br><br>
+<header class="bg-dark py-5 " style="background-image: url('assets/banner gif.gif');">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="text-center text-white">
+            <h1 class="display-4 fw-bolder" style="color: white;">Bütçene Göre Araçlar</h1>
+            <p class="lead fw-normal text-white-50 mb-0">Hemen Aracınızı Seçin Ve Kiralayın</p>
+        </div>
+    </div>
+</header>
+<div class="alert alert-danger"  >Eğer Kiralık Araçları Görmek İstiyorsanız <span><a href=""  routerLink="/login">Giriş Yap</a></span></div>
+
+
+
+<!-- Section-->
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div class="col mb-5" >
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="assets/camaro.gif" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <span class="badge bg-danger rounded-pill">Kiralandı</span>
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Ford Camaro</h5>
+                            <!-- Product price-->
+                            Fiyat: 500 TL
+                            Yakıt : Dizel
+                            Koltuk : 5
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" >Detaylarını Görüntüle</a></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col mb-5" >
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="assets/togg.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <span class="badge bg-danger rounded-pill">Kiralandı</span>
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">TOGG</h5>
+                            <!-- Product price-->
+                            Fiyat: 500 TL
+                            Yakıt : Dizel
+                            Koltuk : 5
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" >Detaylarını Görüntüle</a></div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            <div class="col mb-5" *ngFor="let kayit of kayitlar">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="assets/audi.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <span class="badge bg-primary rounded-pill">Hala Kiralık</span>
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">{{kayit.baslik}}</h5>
+                            <!-- Product price-->
+                            {{kayit.icerik}}
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" [routerLink]="['/kayitdetay',kayit.key]">Detaylarını Görüntüle</a></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="col mb-5" >
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="assets/bmw.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <span class="badge bg-danger rounded-pill">Kiralandı</span>
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Bmw</h5>
+                            <!-- Product price-->
+                            Fiyat: 500 TL
+                            Yakıt : Dizel
+                            Koltuk : 5
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" >Detaylarını Görüntüle</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-5" >
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="assets/mc.jpg" alt="..." />
+                    <!-- Product details-->
+                    
+                    <div class="card-body p-4">
+                        
+                        <div class="text-center">
+                            <span class="badge bg-danger rounded-pill">Kiralandı</span>
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Mercedes</h5>
+                            <!-- Product price-->
+                            Fiyat: 500 TL
+                            Yakıt : Dizel
+                            Koltuk : 5
+                            
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" >Detaylarını Görüntüle</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-5" >
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="assets/togg.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <span class="badge bg-danger rounded-pill">Kiralandı</span>
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">TOGG</h5>
+                            <!-- Product price-->
+                            Fiyat: 500 TL
+                            Yakıt : Dizel
+                            Koltuk : 5
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" >Detaylarını Görüntüle</a></div>
+                    </div>
+                </div>
+            </div>
+
+
+           
+
+            <div class="col mb-5" >
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="assets/ct.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <span class="badge bg-danger rounded-pill">Kiralandı</span>
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Citroen</h5>
+                            <!-- Product price-->
+                            Fiyat: 500 TL
+                            Yakıt : Dizel
+                            Koltuk : 5
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" >Detaylarını Görüntüle</a></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col mb-5" >
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="assets/kartal.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <span class="badge bg-danger rounded-pill">Kiralandı</span>
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Kartal</h5>
+                            <!-- Product price-->
+                            Fiyat: 500 TL
+                            Yakıt : Dizel
+                            Koltuk : 5
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" >Detaylarını Görüntüle</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-5" >
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="assets/araba3.gif" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <span class="badge bg-danger rounded-pill">Kiralandı</span>
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Tesla</h5>
+                            <!-- Product price-->
+                            Fiyat: 500 TL
+                            Yakıt : Dizel
+                            Koltuk : 5
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" >Detaylarını Görüntüle</a></div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+        </div>
+    </div>
+</section>
+<app-footer></app-footer>
