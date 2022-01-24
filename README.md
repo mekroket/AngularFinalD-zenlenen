@@ -15,6 +15,10 @@ Aşağıdaki linki clone yaparak bilgisayarınızda kodları inceleyebilir,çal�
 ```
 https://github.com/mekroket/AngularFinalDuzenlenen.git
 ```
+Youtube Tanıtım Linki
+```
+https://youtu.be/iL6KhIoCkqs
+```
 
 
 ## License
