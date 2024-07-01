@@ -6,7 +6,7 @@ Bu proje angular ve firabase ile yapılan araç kiralama sitesidir
 ```
 Projede amaç angular ve firebase ile araç kiralama sitesi yapmaktır.
 ```
-[![Tanıtım Videosu]([https://www.linkpicture.com/q/Ekran-goruntusu-2022-01-07-125923_1.png)](https://www.linkpicture.com/view.php?img=LPic61d9ad5c305c21331580349](https://www.youtube.com/watch?v=iL6KhIoCkqs))
+[![Proje Tanıtım Videosu](https://img.youtube.com/vi/iL6KhIoCkqs/0.jpg)](https://www.youtube.com/watch?v=iL6KhIoCkqs)
 
 ## İnstallation
 Aşağıdaki linki clone yaparak bilgisayarınızda kodları inceleyebilir,çalıştırabilirsiniz.
